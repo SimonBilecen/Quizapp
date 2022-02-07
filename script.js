@@ -59,5 +59,13 @@ function showQuestion() {
 }
 
 function answer(selection) {
+    let question = questions[currentQuestion];
+    let selectedNumber = selection.slice(-1);
     
+    if (selectedNumber == question['right_answer']) {
+        console.log('passt');
+    }
+    else {
+        console.log('passt nicht du depp.')
+    }
 }
