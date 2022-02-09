@@ -1,5 +1,14 @@
 body {
     background-color: whitesmoke !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    height: 400px;
+    width: 700px;
 }
 
 .container {
@@ -11,7 +20,12 @@ body {
 }
 
 .quiz_card {
-    width: 30rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    flex-direction: row !important;
 }
 
 .question-footer {
@@ -20,6 +34,7 @@ body {
     border-top: 1px solid rgb(0, 0, 0, 4);
     align-items: center;
     padding-top: 12px;
+    width: 400px !important;
 }
 
 .quiz-answer-card:hover {
@@ -30,3 +45,40 @@ body {
 .bg-success, .bg-danger {
     color: white;
 }
+
+.left_section {
+   background-color: rgb(22, 22, 99);
+   color: white;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-evenly ;
+   align-items: center;
+}
+
+.logo {
+    object-fit: contain;
+}
+
+.logo:hover {
+    cursor: pointer;
+    height: 98px;
+}
+
+.current_quiz2 {
+    text-decoration: underline;
+    font-style: oblique;
+    color: yellowgreen;
+}
+
+.current_quiz:hover {
+    cursor: pointer;
+    color: yellow;
+    text-decoration: underline;
+}
+
+.end_screeen {
+    color: black !important;
+    background-image: url("Programmierprojekte/Quizapp/img/trophy.png");
+}
+
